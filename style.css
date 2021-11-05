@@ -1,0 +1,46 @@
+:root{
+    --primaryColor: #ec1c24;
+    --secondaryColor: #212d31;
+    --tertiaryColor: #343a40;
+    --bgColor: #eee;
+}
+/* using !important to rest Bootstrap's default values as I'm using cdn.*/
+body {
+    background: var(--bgColor) !important;
+  }
+main {
+    height: 100vh;
+}
+.title{
+    position: relative;
+    }
+    .title::after
+    {
+        content: '';
+        height: 0.3rem;
+        width: 3.7rem;
+        background-color: var(--primaryColor);
+        position: absolute;
+        top: 3rem;
+        left: 0;
+    }
+
+    .mail_info{
+    color: var(--secondaryColor);
+    }
+    .tel_info{
+        color: var(--primaryColor);
+    }
+
+    .btn-pill{
+        color: var(--primaryColor);
+        border-color:var(--primaryColor);
+        border-radius:1.25rem;
+        width: 8rem;
+    }
+    .btn-pill:hover, .btn-pill:focus{
+        color: var(--bgColor);
+        background-color: var(--primaryColor);
+        border-color:var(--primaryColor);
+        font-weight: bold;
+    }
